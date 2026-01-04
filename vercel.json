@@ -1,3 +1,9 @@
 {
+  "builds": [
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "public/**", "use": "@vercel/static" },
+    { "src": "styles/**", "use": "@vercel/static" },
+    { "src": "scripts/**", "use": "@vercel/static" }
+  ],
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
